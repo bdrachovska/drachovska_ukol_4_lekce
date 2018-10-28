@@ -1,0 +1,95 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+
+/*
+ BARVY
+ czechitas  #b92e81
+ pozadi     #bdc3c7
+ tmava      #31363b
+ delitka    #3f464d
+ portfolio  #e74c3c
+ facebook   #3b5998
+ twitter    #1da1f2
+*/
+
+
+body {
+    background-color: #bdc3c7;
+}
+
+.profil {
+   width: 250px;
+   background-color: #31363b;
+   box-shadow:#3f464d 4px 2px 5px;
+   }
+.hlavicka{
+    position: relative;
+}
+.logo {
+background-color: #b92e81;
+border-radius: 150px;
+position: absolute; right: 5%; top: 80%;
+}
+.foto {
+    width: 100%;
+}
+.jmeno {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 25px;
+}
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #bdc3c7;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.obsah {
+    padding: 6%;
+    }
+
+.odkazy {
+    color: #bdc3c7;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    }
+
+a:link    {
+    color: #bdc3c7;
+    text-decoration: none;
+}
+a:visited    {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    text-align:center;
+    padding:0;
+    border-style: solid;
+    border-top-width: thin;
+    border-bottom-width: thin;
+    border-left-width: 0;
+    border-right-width:0;
+    }
+
+li {
+   display: block;
+   padding: 3%;
+   }
+
+.tlacitko-portfolio :hover {
+background-color: #e74c3c;
+}
+.tlacitko-facebook :hover {
+background-color:  #3b5998;
+}
+.tlacitko-twitter :hover {
+background-color: #1da1f2;
+}
+/* nevím, jak dostat tlačítka facebook a twitter vedle sebe.. */
